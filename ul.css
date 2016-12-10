@@ -1,0 +1,35 @@
+.specialization .aSpecialist ul,
+.specialization .aSpecialist ol {
+  padding: 5px 5px 5px 10px;
+}
+
+.specialization .aSpecialist ul li,
+.specialization .aSpecialist ol li {
+  padding: 0px 5px 5px 0px;
+  margin-left: 23px;  
+  position: relative;
+}
+
+.specialization .aSpecialist ol li {
+  list-style-type: decimal !important;
+}
+
+.specialization .aSpecialist ul li {
+  list-style-type: circle !important;
+}
+
+.specialization .aSpecialist ol li:before {
+  width: 0;
+}
+
+.specialization .aSpecialist ul li:before {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  background: #2c6e87;
+  position: absolute;
+  left: -17px;
+  top: 6px;
+  border-radius: 50%;
+}

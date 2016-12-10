@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link href="favicon.png" rel="icon" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="favicons/manifest.json">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg">
+    <meta name="theme-color" content="#ffffff">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" name="SKYPE_TOOLBAR">
+    <title>
+      Este
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.5, user-scalable=no">
+    <link href="js/WOW/animate.css" rel="stylesheet" type="text/css">
+    <link href="js/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css">
+    <link href="js/datetimepicker-master/jquery.datetimepicker.css" rel="stylesheet">
+    <link href="jquery.fs.selecter.min.css" rel="stylesheet" type="text/css">
+    <link href="bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/slick/slick-theme.css">
+    <link href="common.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="js/WOW/wow.min.js">
+    </script>
+    <script src="js/jquery-2.2.1.min.js">
+    </script>
+    <script src="js/jquery.fs.selecter.min.js" type="text/javascript">
+    </script>
+    <script src="js/fancybox/jquery.fancybox.pack.js">
+    </script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>
+  </head>
+  <body class="allGallery">
+
+    <!--Фиксированные иконки с модальными окнами-->
+    <div class="modalsSection">
+        <div class="secionItem">
+          <div class="mod-sec-callMe">
+            <a class="linkInSection" data-target="#call" data-toggle="modal" href="javascript:void(0)">Заказать звонок</a>
+          </div>
+        </div>
+
+        <div class="secionItem">
+          <div class="mod-sec-heart">
+            <a class="linkInSection" data-target="#reception" data-toggle="modal" href="javascript:void(0)">Записаться на прием</a>
+          </div>
+        </div>
+
+        <div class="secionItem">
+          <div class="mod-sec-review">
+            <a class="linkInSection" data-target="#quest" data-toggle="modal" href="javascript:void(0)">Оставить отзыв</a>
+          </div>
+        </div>
+
+        <div class="secionItem">
+          <div class="mod-sec-quest">
+            <a class="linkInSection" data-target="#getReviews" data-toggle="modal" href="javascript:void(0)">Спросить у врача</a>
+          </div>
+        </div>
+    </div>
+    <!--Фиксированные иконка с модальными окнами CLOSE-->
+    
+    <!--Навигация-->
+    <div class="wide navigation shadow">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+
+                  <div class="navbar-header">
+                    <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle
+                    navigation</span></button> <a class="navbar-brand" href="index.html"><img alt="Логотип" class="nav__logo" src="upload/logo.png"></a>
+                  </div>
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                      <li class="dropdown">
+                        <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="text.html" role="button">О клинике <span class="caretMy"></span></a>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a href="allspecialists.html">Специалисты</a>
+                          </li>
+
+                          <li>
+                            <a href="/">Услуги и цены</a>
+                          </li>
+
+                          <li>
+                            <a href="/">Отзывы</a>
+                          </li>
+
+                          <li>
+                            <a href="/">Это интересно</a>
+                          </li>
+
+                          <li>
+                            <a href="/">Контакты</a>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li>
+                        <a href="allspecialists.html">Специалисты</a>
+                      </li>
+
+                      <li class="dropdown">
+                        <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Услуги и цены <span class="caretMy"></span></a>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a href="#">Специалисты</a>
+                          </li>
+
+                          <li>
+                            <a href="ourproducts.html">Услуги и цены</a>
+                          </li>
+
+                          <li>
+                            <a href="#">Отзывы</a>
+                          </li>
+
+                          <li>
+                            <a href="#">Это интересно</a>
+                          </li>
+
+                          <li>
+                            <a href="#">Контакты</a>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li>
+                        <a href="allreviews.html">Отзывы</a>
+                      </li>
+
+                      <li>
+                        <a href="allarticle.html">Это интересно</a>
+                      </li>
+
+                      <li>
+                        <a href="contacts.html">Контакты</a>
+                      </li>
+
+                      <li style="list-style: none; display: inline">
+                        <ul class="navbarMobLinks">
+                          <li>
+                            <a data-target="#call" data-toggle="modal" href="javascript:void(0)">Заказать звонок</a>
+                          </li>
+
+                          <li>
+                            <a data-target="#quest" data-toggle="modal" href="javascript:boid(0)">Оставить отзыв</a>
+                          </li>
+
+                          <li>
+                            <a data-target="#reception" data-toggle="modal" href="javascript:boid(0)">Записаться на прием</a>
+                          </li>
+
+                          <li>
+                            <a data-target="#getReviews" data-toggle="modal" href="javascript:boid(0)">Спросить у врача</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <span class="phone liPhone">+7 (495) <span>772-82-72</span></span>
+                </div>
+                <!-- /.container-fluid -->
+              </nav>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--Навигация CLOSE-->
+
+    <!--Блок с заголовком страницы-->
+    <div class="head cleanItem">
+      <div class="container">
+        <div class="col-lg-12 col-sm-12 col-xs-12">
+          <h1 class="styleH1 colorWhite">
+            Фотогалерея
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!--Блок с заголовком страницы CLOSE-->
+
+    <!--Footer c галереей-->
+    <footer class="wide">
+
+      <!--Галерея-->
+      <section class="gallery">
+          <div class="container">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+              <div class="galItem col-md-2 col-sm-4 col-xs-6 col-xs-4">
+                <a class="fancyimage" data-fancybox-group="group" href="upload/gallery/0001.jpg"><img alt="Изображение" class="img-responsive" src="upload/gallery/0001.jpg"></a>
+              </div>
+
+              <div class="galItem col-md-2 col-sm-4 col-xs-6 col-xs-4">
+                <a class="fancyimage" data-fancybox-group="group" href="upload/gallery/0002.jpg"><img alt="Изображение" class="img-responsive" src="upload/gallery/0002.jpg"></a>
+              </div>
+
+              <div class="galItem col-md-2 col-sm-4 col-xs-6 col-xs-4">
+                <a class="fancyimage" data-fancybox-group="group" href="upload/gallery/0003.jpg"><img alt="Изображение" class="img-responsive" src="upload/gallery/0003.jpg"></a>
+              </div>
+
+              <div class="galItem col-md-2 col-sm-4 col-xs-6 col-xs-4">
+                <a class="fancyimage" data-fancybox-group="group" href="upload/gallery/0004.jpg"><img alt="Изображение" class="img-responsive" src="upload/gallery/0004.jpg"></a>
+              </div>
+              
+              <div class="galItem col-md-2 col-sm-4 col-xs-6 col-xs-4">
+                <a class="fancyimage" data-fancybox-group="group" href="upload/gallery/0005.jpg"><img alt="Изображение" class="img-responsive" src="upload/gallery/0005.jpg"></a>
+              </div>
+
+              <div class="galItem col-md-2 col-sm-4 col-xs-6 col-xs-4">
+                <a class="fancyimage" data-fancybox-group="group" href="upload/gallery/0006.jpg"><img alt="Изображение" class="img-responsive" src="upload/gallery/0006.jpg"></a>
+              </div>
+
+              <div class="galItem col-md-2 col-sm-4 col-xs-6 col-xs-4">
+                <a class="fancyimage" data-fancybox-group="group" href="upload/gallery/0007.jpg"><img alt="Изображение" class="img-responsive" src="upload/gallery/0007.jpg"></a>
+              </div>
+
+              <div class="galItem col-md-2 col-sm-4 col-xs-6 col-xs-4">
+                <a class="fancyimage" data-fancybox-group="group" href="upload/gallery/0008.jpg"><img alt="Изображение" class="img-responsive" src="upload/gallery/0008.jpg"></a>
+              </div>
+
+              <div class="galItem col-md-2 col-sm-4 col-xs-6 col-xs-4">
+                <a class="fancyimage" data-fancybox-group="group" href="upload/gallery/0009.jpg"><img alt="Изображение" class="img-responsive" src="upload/gallery/0009.jpg"></a>
+              </div>
+
+              <div class="galItem col-md-2 col-sm-4 col-xs-6 col-xs-4">
+                <a class="fancyimage" data-fancybox-group="group" href="upload/gallery/0010.jpg"><img alt="Изображение" class="img-responsive" src="upload/gallery/0010.jpg"></a>
+              </div>
+
+              <div class="galItem col-md-2 col-sm-4 col-xs-6 col-xs-4">
+                <a class="fancyimage" data-fancybox-group="group" href="upload/gallery/0011.jpg"><img alt="Изображение" class="img-responsive" src="upload/gallery/0011.jpg"></a>
+              </div>
+
+              <div class="galItem col-md-2 col-sm-4 col-xs-6 col-xs-4">
+                <a class="fancyimage" data-fancybox-group="group" href="upload/gallery/0012.jpg"><img alt="Изображение" class="img-responsive" src="upload/gallery/0012.jpg"></a>
+              </div>
+
+              <div class="galItem col-lg-2 col-md-2 col-sm-4 col-xs-6 col-xs-4">
+                <a class="fancyimage" data-fancybox-group="group" href="upload/gallery/0013.jpg"><img alt="Изображение" class="img-responsive" src="upload/gallery/0013.jpg"></a>
+              </div>
+
+              <div class="galItem col-lg-2 col-md-2 col-sm-4 col-xs-6 col-xs-4">
+                <a class="fancyimage" data-fancybox-group="group" href="upload/gallery/0014.jpg"><img alt="Изображение" class="img-responsive" src="upload/gallery/0014.jpg"></a>
+              </div>
+
+              <div class="galItem col-lg-2 col-md-2 col-sm-4 col-xs-6 col-xs-4">
+                <a class="fancyimage" data-fancybox-group="group" href="upload/gallery/0015.jpg"><img alt="Изображение" class="img-responsive" src="upload/gallery/0014.jpg"></a>
+              </div>
+
+              <div class="galItem col-lg-2 col-md-2 col-sm-4 col-xs-6 col-xs-4">
+                <a class="fancyimage" data-fancybox-group="group" href="upload/gallery/0016.jpg"><img alt="Изображение" class="img-responsive" src="upload/gallery/0016.jpg"></a>
+              </div>
+
+              <div class="galItem col-lg-2 col-md-2 col-sm-4 col-xs-6 col-xs-4">
+                <a class="fancyimage" data-fancybox-group="group" href="upload/gallery/0017.jpg"><img alt="Изображение" class="img-responsive" src="upload/gallery/0017.jpg"></a>
+              </div>
+
+              <div class="galItem col-lg-2 col-md-2 col-sm-4 col-xs-6 col-xs-4">
+                <a class="fancyimage" data-fancybox-group="group" href="upload/gallery/0018.jpg"><img alt="Изображение" class="img-responsive" src="upload/gallery/0018.jpg"></a>
+              </div>
+
+              <div class="galItem col-lg-2 col-md-2 col-sm-4 col-xs-6 col-xs-4">
+                <a class="fancyimage" data-fancybox-group="group" href="upload/gallery/0019.jpg"><img alt="Изображение" class="img-responsive" src="upload/gallery/0019.jpg"></a>
+              </div>
+
+              <div class="galItem col-lg-2 col-md-2 col-sm-4 col-xs-6 col-xs-4">
+                <a class="fancyimage" data-fancybox-group="group" href="upload/gallery/0020.jpg"><img alt="Изображение" class="img-responsive" src="upload/gallery/0020.jpg"></a>
+              </div>
+
+              <div class="galItem col-lg-2 col-md-2 col-sm-4 col-xs-6 col-xs-4">
+                <a class="fancyimage" data-fancybox-group="group" href="upload/gallery/0021.jpg"><img alt="Изображение" class="img-responsive" src="upload/gallery/0021.jpg"></a>
+              </div>
+
+              <div class="galItem col-lg-2 col-md-2 col-sm-4 col-xs-6 col-xs-4">
+                <a class="fancyimage" data-fancybox-group="group" href="upload/gallery/0022.jpg"><img alt="Изображение" class="img-responsive" src="upload/gallery/0022.jpg"></a>
+              </div>
+
+            </div>
+          </div>
+      </section>
+      <!--Галерея CLOSE-->
+
+      <!--Footer-->
+      <div class="container">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="topBlock">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="footer__logo">
+                </div>
+
+                <div class="navbar">
+                  <ul class="ulFooter">
+                    <li class="liFooterItem">
+                      <ul>
+                        <li>
+                          <a href="text.html">О клинике</a>
+                        </li>
+
+                        <li>
+                          <a href="allspecialists.html">Специалисты</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="liFooterItem">
+                      <ul>
+                        <li>
+                          <a href="ourproducts.html">Услуги и цены</a>
+                        </li>
+
+                        <li>
+                          <a href="allreviews.html">Отзывы</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="liFooterItem">
+                      <ul>
+                        <li>
+                          <a href="allarticle.html">Это интересно</a>
+                        </li>
+
+                        <li>
+                          <a href="contacts.html">Контакты</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12 rightBlock">
+                <div class="itemConnect">
+                  <img alt="Обратная связь" class="itemConnect itemConnect_emailIcon" src="upload/ftIcMessage.png">
+                  <div class="itemConnectElements">
+                    <p class="itemConnect_emailZag">
+                      E-mail для связи:
+                    </p>
+
+                    <a class="itemConnect_emailText link" href="mailto:Design@itena.ru">
+                    Design@itena.ru
+                  </a>
+                  </div>
+                </div>
+
+                <div class="itemConnect">
+                  <img alt="По интересующим вопросам" class="itemConnect itemConnect_emailIcon" src="upload/ftIcMessage.png">
+                  <div class="itemConnectElements">
+                    <p class="itemConnect_emailZag">
+                      По всем вопросам:
+                    </p>
+
+                    <p class="itemConnect_emailText">
+                      +7 (4742) <span>22-53-56</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="makeSite">
+                  <p class="makeSite__h1">
+                    Разработка<br>
+                    сайта
+                  </p>
+                  <a href="http://itena.ru/" target="_blank"><img alt="Логотип" class="makeSite__logo" src="upload/itenaLogo.png"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!--Footer CLOSE-->
+
+      <div id="map" style="width: 100%; height: 400px">
+      </div>
+    </footer>
+    <!--Footer c галереей CLOSE-->
+
+    <!--Уведомление. Появляется при успешной отправке формы-->
+    <div class="modal fade" id="ques">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+          <p class="modalH1">
+            Уведомление
+          </p>
+
+          <p class="styleP">
+            Мы обязательно ответим на вопрос
+          </p>
+          <button class="close modalBut smallButton" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+    <!--Уведомление. Появляется при успешной отправке формы CLOSE-->
+    
+    <!--Заказать звонок-->
+    <div class="modal fade" id="call">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+          <p class="modalH1">
+            Заказать звонок
+          </p>
+
+          <p class="styleP">
+            Оставьте нам свои данные и мы вам обязательно перезвоним
+          </p>
+
+          <form class="callForm">
+            <div class="divName">
+              <input class="formName" placeholder="Ваше имя" type="text">
+            </div>
+            
+            <div class="divPhone">
+              <input placeholder="+7 (___) - ___ - __ - __" type="text" class="phone phoneForm">   
+            </div>
+            
+            <button class="close modalBut smallButton shadowModalButton" type="submit">Позвоните мне</button>
+            <div class="checkbox">
+              <input id="myDataForm" name="myData" type="checkbox" class="check"> 
+              <label class="styleP-12px" for="myDataForm">Я согласен на обработку данных</label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--Записаться на прием-->
+    <div class="modal fade" id="reception">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+          <p class="modalH1">
+            Записаться на прием
+          </p>
+
+          <p class="styleP">
+            Заполните в данной форме желаемые дату и время приема. В ближайшее время с вами свяжется оператор call-центра для уточнения данных. Спасибо!
+          </p>
+
+          <form class="formReception">
+            <p class="formLead">
+              Ваш имя, телефон и желаемая дата приема
+            </p>
+            <div class="receptionNameBlock">
+              <input class="formName" placeholder="Ваше ФИО" type="text"> 
+            </div>
+            
+            <div class="receptionPhoneBlock">
+              <input class="phone phoneInput" placeholder="+7 (___) - ___ - __ - __" type="text"> 
+            </div>
+
+              <input id="datetimepicker" placeholder="дд.мм.год" type="text"> 
+            
+            
+            <input id="time" placeholder="чч:мм" type="text">
+            <p class="formLead">
+              Ваш имя, телефон и желаемая дата приема
+            </p>
+            <select name="specialization" class="selSpecialization specialization">
+              <option disabled selected value="">
+                Выберите специализацию
+              </option>
+              <option value="1">
+                Специализация 1
+              </option>
+              <option value="2">
+                Специализация 2
+              </option>
+              <option value="3">
+                Специализация 3
+              </option>
+              <option value="4">
+                Специализация 4
+              </option>
+            </select> 
+            <select id="nameSpecialist" name="nameSpecialist" class="selNameSpecialist">
+              <option disabled selected value="">
+                Выберите врача
+              </option>
+              <option value="1">
+                Иван Ургант
+              </option>
+              <option value="2">
+                Иван Ургант
+              </option>
+              <option value="3">
+                Иван Ургант
+              </option>
+              <option value="4">
+                Иван Ургант
+              </option>
+            </select> 
+
+            <textarea class="formTextarea" maxlength="220" placeholder="Введите комментарий"></textarea>
+            <div class="checkbox">
+              <input id="myDataReception" class="check" name="myData" type="checkbox"> 
+              <label class="styleP-12px" for="myDataReception">Я согласен на обработку данных</label>
+            </div>
+            <button class="close modalBut smallButton shadowModalButton" type="submit">Записаться на прием</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--Оставить отзыв-->
+    <div class="modal fade" id="quest">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+          <p class="modalH1">
+            Оставить отзыв
+          </p>
+
+          <p class="styleP">
+            Заполните в данной форме желаемые дату и время приема. В ближайшее время с вами свяжется оператор call-центра для уточнения данных. Спасибо!
+          </p>
+
+          <form class="reviewsForm">
+
+            <ul class="nav nav-tabs">
+              <li class="active">
+                <a href="#forProduct" data-toggle="tab">
+                  <div class='checkedRbutton'></div>
+                  <input id="forClinik" name="target" type="radio" checked="checked" value="one"> 
+                  <label for="forClinik">Об услуги/клинике</label> 
+                </a>
+              </li>
+
+              <li>
+                <a href="#forSpecialistsClinic" data-toggle="tab">
+                  <input id="forSpec" name="target" type="radio" value="two"> 
+                  <label for="forSpec">О специалисте</label> 
+                </a>
+              </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane active" id="forProduct">
+                <div class="selSpecialBlock">
+                  <select id="specialization" class="selSpecForm" name="specialization">
+                    <option disabled selected value="">
+                      Выберите специализацию
+                    </option>
+                    <option value="1">
+                      Специализация 1
+                    </option>
+                    <option value="2">
+                      Специализация 2
+                    </option>
+                    <option value="3">
+                      Специализация 3
+                    </option>
+                    <option value="4">
+                      Специализация 4
+                    </option>
+                  </select>  
+                </div>
+              </div>
+
+              <div class="tab-pane" id="forSpecialistsClinic">
+                  <div class="selSpecialBlock">
+                    <select class="selSpecForm" name="specialization">
+                      <option disabled selected value="">
+                        Выберите специалиста
+                      </option>
+                      <option value="1">
+                        Иван Ургант
+                      </option>
+                      <option value="2">
+                        Никита Михалков
+                      </option>
+                      <option value="3">
+                        Константин Константинопольский
+                      </option>
+                    </select>  
+                  </div>
+              </div>
+            </div>
+            
+            <p class="formLead">
+              Ваш отзыв
+            </p>
+            <label for="upload">Загрузить файлы</label> <input id="upload" type="file"> 
+            <div class="reviewsFormBlock">
+              <input class="formName" placeholder="Ваше ФИО" type="text">   
+            </div>
+            
+            <div class="reviewsEmailBlock">
+              <input class="forMali" placeholder="Ваш e-mail" type="email">   
+            </div>
+            
+            <div class="reviewsTextAreaBlock">
+              <textarea class="formTextArea" maxlength="220" placeholder="Текст отзыва"></textarea>  
+            </div>
+            
+            <div class="checkbox">
+              <input id="myDataQuest" class="check" name="myData" type="checkbox">
+              <label class="styleP-12px" for="myDataQuest">Я согласен на обработку данных</label>
+            </div>
+            <button class="close modalBut smallButton shadowModalButton" type="submit">Отправить отзыв</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--Спросить у врача-->
+    <div class="modal fade" id="getReviews">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+          <p class="modalH1">
+            Спросить у специалиста
+          </p>
+
+          <p class="styleP">
+            Заполните в данной форме желаемые дату и время приема. В ближайшее время с вами свяжется оператор call-центра для уточнения данных. Спасибо
+          </p>
+
+          <form class="formSpecialistTest">
+            <div class="specTestBlock">
+              <input class="formName" placeholder="Ваше имя" type="text">   
+            </div>
+            
+            <div class="specTestMail">
+              <input class="forMali" placeholder="Ваш e-mail" type="email">   
+            </div>
+            
+            <div class="specThemeBlock">
+              <input class="theme" placeholder="Тема обращения" type="text">  
+            </div>
+             
+            <div class="taTestBlock">
+              <textarea class="ta formTextarea" maxlength="220" placeholder="Текст вопроса"></textarea>
+            </div>
+            
+            <div class="checkbox">
+              <input id="myDataGetReviews" class="check" name="myData" type="checkbox"> 
+              <label class="styleP-12px" for="myDataGetReviews">Я согласен на обработку данных</label>
+            </div>
+            <button class="close modalBut smallButton shadowModalButton" type="submit">Отправить отзыв</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/datetimepicker-master/build/jquery.datetimepicker.full.min.js">
+    </script> 
+    <script src="js/jquery.maskedinput.min.js">
+    </script> 
+    <script src="js/bootstrap.min.js">
+    </script> 
+    <script src="js/parallax.min.js"></script>
+    <script src="libs/slick/slick.js"></script>
+    <script src="js/common.js">
+    </script>
+
+    <noscript><p>Ваш браузер не поддерживает скрипты! Установите актуальную версию браузера</p></noscript>
+  </body>
+</html>

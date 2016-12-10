@@ -61,7 +61,6 @@ function zIndex() {
 zIndex();
 
 function footer(){
-	console.log("footer");
   var minheight = (typeof window.outerHeight != 'undefined')?Math.max(window.outerHeight, $(window).height()):$(window).height();
   $("body").css({"padding-bottom": $(".footer").outerHeight() + parseInt($(".footer").css("margin-top")), "min-height": $(window).outerHeight});
 }
